@@ -1,0 +1,13 @@
+name: Build code
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Build code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gradle/gradle-build-action@v3
+      - run: ./gradlew clean build
