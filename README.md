@@ -1,6 +1,8 @@
 For this lab we will use https://fly.io/
 
 1. [Sign up for an account](https://fly.io/app/sign-up)
+2. It tells you to add a payment method - I will give you details
+3. Open your email to verify your email for fly
 
 ### install fly
 
@@ -36,6 +38,15 @@ fly auth login
 
 ```bash
 fly launch
+```
+
+Answer the questions as below:
+```
+Would you like to copy its configuration to the new app? (y/N)
+y
+
+Do you want to tweak these settings before proceeding? (y/N)
+n
 ```
 
 ### deploy to fly
